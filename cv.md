@@ -4,7 +4,8 @@
 
 - Address: Samara, Russian Federation
 - Mobile phone: +7(929)705-28-50
-- E-mail: adonisiy<span>@</span>list.ru
+- E-mail: adonisiy@list.ru
+- Discord: [Adonisiy (@Adonisiy)](https://discordapp.com/users/1175865175199469660/)
 - GitHub: [Adonisiy](https://github.com/Adonisiy/)
 
 ## About Me
@@ -20,7 +21,7 @@ applications for mobile devices.
 - TypeScript
 - Node.js
 - NestJS
-- Git
+- Git, GitHub
 
 ## Example code
 
@@ -56,4 +57,4 @@ NodeJS 2024 Q1
 
 ## My projects
 
-My CV
+[My CV](https://adonisiy.github.io/rsschool-cv/cv)
