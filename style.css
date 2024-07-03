@@ -1,5 +1,6 @@
 html {
   background-color: silver;
+  scroll-behavior: smooth;
 }
 
 .page {
@@ -9,8 +10,16 @@ html {
 }
 
 .nav-list {
+  padding-left: 0px;
   display: flex;
-  justify-content: right;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .photo {
