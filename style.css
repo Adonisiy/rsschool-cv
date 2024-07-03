@@ -1,0 +1,31 @@
+html {
+  background-color: silver;
+}
+
+.page {
+  background-color: white;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: right;
+}
+
+.photo {
+  width: 200px;
+}
+
+.column-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  width: 40%;
+}
+
+pre {
+  overflow: scroll;
+}

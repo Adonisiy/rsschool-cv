@@ -10,7 +10,7 @@
     <div class="page">
       <header>
         <nav>
-          <ul>
+          <ul class="nav-list">
             <li><a href="#">Contacts</a></li>
             <li><a href="#">About Me</a></li>
             <li><a href="#">Skills</a></li>
@@ -23,103 +23,131 @@
         </nav>
       </header>
       <main>
-        <div>
-          <img src="./assets/img/avatar.JPG" alt="photo" width="32" />
-          <h1>Elsukov Sergey</h1>
-          <h2>Front-End Developer (Beginner)</h2>
+        <div class="column-2">
+          <img
+            src="./assets/img/avatar.JPG"
+            alt="photo"
+            width="32"
+            class="photo"
+          />
+          <div>
+            <h1>Elsukov Sergey</h1>
+            <h2>Front-End Developer (Beginner)</h2>
+          </div>
         </div>
-        <section>
-          <h2>Contact information</h2>
-          <ul>
-            <li>Address: Samara, Russian Federation</li>
-            <li>Mobile phone: +7(929)705-28-50</li>
-            <li>E-mail: adonisiy@list.ru</li>
-            <li>
-              <a href="https://discordapp.com/users/1175865175199469660/"
-                >Discord</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>About Me</h2>
-          <p>
-            I'm a design engineer. I often develop programs for solving physical
-            and mathematical problems on a personal computer. I like to program
-            and to learn new things in this field. I want to gain enough
-            knowledge and practice to develop websites and applications for
-            mobile devices.
-          </p>
-        </section>
-        <section>
-          <h2>Skills</h2>
-          <ul>
-            <li>Delphi</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Node.js</li>
-            <li>NestJS</li>
-            <li>Git, GitHub</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Example code</h2>
-          <pre><code>function dayPlan (hours, tasks, duration){ 
-  if (!tasks) return []; 
-  let schedule = []; 
-  let rest = Math.round((60*hours-tasks*duration)/(tasks-1)); 
-  if (rest&lt;0) return &quot;You&apos;re not sleeping tonight!&quot;; 
-  for (let i=1; i&lt;tasks; i++){
-    schedule.push(duration); 
-    schedule.push(rest); 
-  } 
-  schedule.push(duration);
-  return schedule; 
-}</code></pre>
-        </section>
-        <section>
-          <h2>Experience</h2>
-          <p>I have no experience in the field of front-end development</p>
-        </section>
-        <section>
-          <h2>Education</h2>
-          <ul>
-            <li>
-              Samara State University, Faculty of Physics, specialty of general
-              and theoretical physics
-            </li>
-            <li>NodeJS 2024 Q1</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Languages</h2>
-          <ul>
-            <li>Russian - native</li>
-            <li>English - A1</li>
-          </ul>
-        </section>
-        <section>
-          <h2>My projects</h2>
-          <ul>
-            <li>
-              <a
-                href="https://github.com/Adonisiy/websockets-ui/tree/workbranch"
-                >Сервер для "BattleShip"</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/Adonisiy/nodejs2024Q1-service-new/tree/part3"
-                >Сервер для "Home Library Service"</a
-              >
-            </li>
-          </ul>
-        </section>
+
+        <div class="column-2">
+          <section>
+            <h2>About Me</h2>
+            <p>
+              I'm a design engineer. I often develop programs for solving
+              physical and mathematical problems on a personal computer. I like
+              to program and to learn new things in this field. I want to gain
+              enough knowledge and practice to develop websites and applications
+              for mobile devices.
+            </p>
+          </section>
+          <section>
+            <h2>Contact information</h2>
+            <ul>
+              <li>Address: Samara, Russian Federation</li>
+              <li>Mobile phone: +7(929)705-28-50</li>
+              <li>E-mail: adonisiy@list.ru</li>
+              <li>
+                <a href="https://discordapp.com/users/1175865175199469660/"
+                  >Discord</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="column-2">
+          <section>
+            <h2>Skills</h2>
+            <ul>
+              <li>Delphi</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Node.js, NestJs</li>
+              <li>Git, GitHub</li>
+            </ul>
+          </section>
+          <!-- <section>
+            <h2>Example code</h2>
+            <pre><code>function dayPlan (hours, tasks, duration){ 
+    if (!tasks) return []; 
+    let schedule = []; 
+    let rest = Math.round((60*hours-tasks*duration)/(tasks-1)); 
+    if (rest&lt;0) return &quot;You&apos;re not sleeping tonight!&quot;; 
+    for (let i=1; i&lt;tasks; i++){
+      schedule.push(duration); 
+      schedule.push(rest); 
+    } 
+    schedule.push(duration);
+    return schedule; 
+  }</code></pre>
+          </section> -->
+          <section>
+            <h2 class="section-header code">Example code</h2>
+            <pre
+              class="pre-code"
+            ><code><span class="code">const findAll = (array, n) => {</span>
+<span class="code">let res = [];</span>
+<span class="code">for (let i=0; i &lt; array.length; i++)</span>
+  <span class="code">if (array[i]==n) res.push(i);</span>              
+<span class="code">return res;</span>                  
+<span class="code">}</span></code></pre>
+          </section>
+        </div>
+        <div class="column-2">
+          <section>
+            <h2>Experience</h2>
+            <p>I have no experience in the field of front-end development</p>
+          </section>
+          <section>
+            <h2>Education</h2>
+            <ul>
+              <li>
+                Samara State University, Faculty of Physics, specialty of
+                general and theoretical physics
+              </li>
+              <li>NodeJS 2024 Q1</li>
+            </ul>
+          </section>
+        </div>
+        <div class="column-2">
+          <section>
+            <h2>Languages</h2>
+            <ul>
+              <li>Russian - native</li>
+              <li>English - A1</li>
+            </ul>
+          </section>
+          <section>
+            <h2>My projects</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/Adonisiy/websockets-ui/tree/workbranch"
+                  >Сервер для "BattleShip"</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Adonisiy/nodejs2024Q1-service-new/tree/part3"
+                  >Сервер для "Home Library Service"</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
       </main>
       <footer>
         <a href="https://github.com/Adonisiy"></a>
         <span>2024</span>
-        <img src="" alt="" />
+        <a
+          href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0"
+        ></a>
       </footer>
     </div>
   </body>
