@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -40,7 +46,7 @@
 
         <div class="column-2">
           <section id="about">
-            <h2>About Me</h2>
+            <h2 class="section_header">About Me</h2>
             <p>
               I'm a design engineer. I often develop programs for solving
               physical and mathematical problems on a personal computer. I like
@@ -50,7 +56,7 @@
             </p>
           </section>
           <section id="contacts">
-            <h2>Contact information</h2>
+            <h2 class="section_header">Contacts</h2>
             <ul>
               <li>Address: Samara, Russian Federation</li>
               <li>Mobile phone: +7(929)705-28-50</li>
@@ -65,7 +71,7 @@
         </div>
         <div class="column-2">
           <section id="skills">
-            <h2>Skills</h2>
+            <h2 class="section_header">Skills</h2>
             <ul>
               <li>Delphi</li>
               <li>JavaScript</li>
@@ -74,13 +80,13 @@
               <li>Git, GitHub</li>
             </ul>
           </section>
-          <section>
-            <h2 class="section-header code">Example code</h2>
+          <section id="code">
+            <h2 class="section_header">Example code</h2>
             <pre><code>function sliding(nums, k) {
-const res = [];
-for (let i = 0; i &lt; nums.length - k + 1; i++)
-res.push(Math.max(...nums.slice(i, i + k)));
-return res;
+  const res = [];
+  for (let i = 0; i &lt; nums.length - k + 1; i++)
+    res.push(Math.max(...nums.slice(i, i + k)));
+  return res;
 }</code>
             </pre>
           </section>
@@ -113,11 +119,11 @@ return res;
         </div>
         <div class="column-2">
           <section id="experience">
-            <h2>Experience</h2>
+            <h2 class="section_header">Experience</h2>
             <p>I have no experience in the field of front-end development</p>
           </section>
           <section id="education">
-            <h2>Education</h2>
+            <h2 class="section_header">Education</h2>
             <ul>
               <li>
                 Samara State University, Faculty of Physics, specialty of
@@ -129,25 +135,25 @@ return res;
         </div>
         <div class="column-2">
           <section id="languages">
-            <h2>Languages</h2>
+            <h2 class="section_header">Languages</h2>
             <ul>
               <li>Russian - native</li>
               <li>English - A1</li>
             </ul>
           </section>
           <section id="projects">
-            <h2>My projects</h2>
+            <h2 class="section_header">My projects</h2>
             <ul>
               <li>
                 <a
                   href="https://github.com/Adonisiy/websockets-ui/tree/workbranch"
-                  >Сервер для "BattleShip"</a
+                  >Server for "BattleShip"</a
                 >
               </li>
               <li>
                 <a
                   href="https://github.com/Adonisiy/nodejs2024Q1-service-new/tree/part3"
-                  >Сервер для "Home Library Service"</a
+                  >Server for "Home Library Service"</a
                 >
               </li>
             </ul>

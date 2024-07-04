@@ -1,23 +1,28 @@
 :root {
-  --background-color: rgb(254, 255, 220);
-  --background-header: rgb(247 244 174);
+  --color-background: rgb(254, 255, 220);
+  --color-header: rgb(247, 244, 174);
+  --color-header-head: rgb(185, 179, 47);
+  --color-text: rgb(55, 54, 45);
+  --width-column: 43%;
 }
 
-html {
+body {
   background-color: silver;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+  color: var(--color-text);
+  font-family: 'Kalam', cursive;
 }
 
 .page {
   background-color: white;
   max-width: 850px;
   margin: 0 auto;
-  background-color: var(--background-color);
+  background-color: var(--color-background);
 }
 
 header,
 footer {
-  background-color: var(--background-header);
+  background-color: var(--color-header);
 }
 
 .nav-list {
@@ -25,7 +30,6 @@ footer {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  gap: 20px;
 }
 
 a {
@@ -43,7 +47,7 @@ a {
 }
 
 .photo-header {
-  width: 40%;
+  width: var(--width-column);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,9 +60,28 @@ h2 {
 }
 
 section {
-  width: 40%;
+  width: var(--width-column);
+}
+
+.section_header {
+  background-color: var(--color-header);
+  position: relative;
+}
+
+.section_header::before {
+  position: absolute;
+  content: '';
+  background-color: var(--color-header-head);
+  left: 0px;
+  top: 0px;
+  width: 30px;
+  height: 100%;
 }
 
 pre {
   overflow: scroll;
+}
+
+code {
+  font-family: 'Kalam', sans-serif;
 }
