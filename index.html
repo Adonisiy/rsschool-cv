@@ -11,33 +11,35 @@
       <header>
         <nav>
           <ul class="nav-list">
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Example code</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Languages</a></li>
-            <li><a href="#">My projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Example code</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#projects">My projects</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <div class="column-2">
-          <img
-            src="./assets/img/avatar.JPG"
-            alt="photo"
-            width="32"
-            class="photo"
-          />
-          <div>
+          <div class="photo-header">
+            <img
+              src="./assets/img/avatar.JPG"
+              alt="photo"
+              width="32"
+              class="photo"
+            />
+          </div>
+          <div class="photo-header">
             <h1>Elsukov Sergey</h1>
             <h2>Front-End Developer (Beginner)</h2>
           </div>
         </div>
 
         <div class="column-2">
-          <section>
+          <section id="about">
             <h2>About Me</h2>
             <p>
               I'm a design engineer. I often develop programs for solving
@@ -47,7 +49,7 @@
               for mobile devices.
             </p>
           </section>
-          <section>
+          <section id="contacts">
             <h2>Contact information</h2>
             <ul>
               <li>Address: Samara, Russian Federation</li>
@@ -62,7 +64,7 @@
           </section>
         </div>
         <div class="column-2">
-          <section>
+          <section id="skills">
             <h2>Skills</h2>
             <ul>
               <li>Delphi</li>
@@ -71,6 +73,16 @@
               <li>Node.js, NestJs</li>
               <li>Git, GitHub</li>
             </ul>
+          </section>
+          <section>
+            <h2 class="section-header code">Example code</h2>
+            <pre><code>function sliding(nums, k) {
+const res = [];
+for (let i = 0; i &lt; nums.length - k + 1; i++)
+res.push(Math.max(...nums.slice(i, i + k)));
+return res;
+}</code>
+            </pre>
           </section>
           <!-- <section>
             <h2>Example code</h2>
@@ -87,7 +99,7 @@
     return schedule; 
   }</code></pre>
           </section> -->
-          <section>
+          <!-- <section id="code">
             <h2 class="section-header code">Example code</h2>
             <pre
               class="pre-code"
@@ -97,14 +109,14 @@
   <span class="code">if (array[i]==n) res.push(i);</span>              
 <span class="code">return res;</span>                  
 <span class="code">}</span></code></pre>
-          </section>
+          </section> -->
         </div>
         <div class="column-2">
-          <section>
+          <section id="experience">
             <h2>Experience</h2>
             <p>I have no experience in the field of front-end development</p>
           </section>
-          <section>
+          <section id="education">
             <h2>Education</h2>
             <ul>
               <li>
@@ -116,14 +128,14 @@
           </section>
         </div>
         <div class="column-2">
-          <section>
+          <section id="languages">
             <h2>Languages</h2>
             <ul>
               <li>Russian - native</li>
               <li>English - A1</li>
             </ul>
           </section>
-          <section>
+          <section id="projects">
             <h2>My projects</h2>
             <ul>
               <li>
