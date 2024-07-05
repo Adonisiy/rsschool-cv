@@ -3,7 +3,152 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+   >
+    <title>CV</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page">
+      <header>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Example code</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#projects">My projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="column-2">
+          <div class="photo-header">
+            <img
+              src="./assets/img/avatar.JPG"
+              alt="photo"
+              width="32"
+              class="photo"
+           >
+          </div>
+          <div class="photo-header">
+            <h1>Elsukov Sergey</h1>
+            <div class="div-border"></div>
+            <h2>Front-End Developer (Beginner)</h2>
+          </div>
+        </div>
+
+        <div class="column-2">
+          <section id="about">
+            <h2 class="section_header">About Me</h2>
+            <p>
+              I'm a design engineer. I often develop programs for solving
+              physical and mathematical problems on a personal computer. I like
+              to program and to learn new things in this field. I want to gain
+              enough knowledge and practice to develop websites and applications
+              for mobile devices.
+            </p>
+          </section>
+          <section id="contacts">
+            <h2 class="section_header">Contacts</h2>
+            <ul class="contacts_list">
+              <li>Location: Samara, Russian Federation</li>
+              <li>Phone: +7(929)705-28-50</li>
+              <li>E-mail: adonisiy@list.ru</li>
+              <li>
+                Discord:
+                <a href="https://discordapp.com/users/1175865175199469660/"
+                  >@Adonisiy</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="column-2">
+          <section id="skills">
+            <h2 class="section_header">Skills</h2>
+            <ul>
+              <li>Delphi</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>NestJs</li>
+              <li>Git, GitHub</li>
+            </ul>
+          </section>
+          <section id="code">
+            <h2 class="section_header">Example code</h2>
+            <pre><code>function sliding(nums, k) {
+  const res = [];
+  for (let i = 0; i &lt; nums.length - k + 1; i++)
+    res.push(Math.max(...nums.slice(i, i + k)));
+  return res;
+}</code>
+            </pre>
+          </section>
+        </div>
+        <div class="column-2">
+          <section id="experience">
+            <h2 class="section_header">Experience</h2>
+            <p>I have no experience in the field of front-end development</p>
+          </section>
+          <section id="education">
+            <h2 class="section_header">Education</h2>
+            <ul>
+              <li>
+                Samara State University, Faculty of Physics, specialty of
+                general and theoretical physics
+              </li>
+              <li>NodeJS 2024 Q1</li>
+            </ul>
+          </section>
+        </div>
+        <div class="column-2">
+          <section id="languages">
+            <h2 class="section_header">Languages</h2>
+            <ul>
+              <li>Russian - native</li>
+              <li>English - A1</li>
+            </ul>
+          </section>
+          <section id="projects">
+            <h2 class="section_header">My projects</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/Adonisiy/websockets-ui/tree/workbranch"
+                  >Server for "BattleShip"</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Adonisiy/nodejs2024Q1-service-new/tree/part3"
+                  >Server for "Home Library Service"</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer_container">
+          <a href="https://github.com/Adonisiy" class="link-github"
+            ><img src="./assets/icon/github.png" alt="icon of GitHub">My
+            GitHub</a
+          >
+          <span>2024</span>
+          <a href="https://rs.school/courses/javascript-ru">
+            <img src="./assets/icon/rsschool.png" alt="icon of RSSchool">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
