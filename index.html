@@ -40,6 +40,7 @@
           </div>
           <div class="photo-header">
             <h1>Elsukov Sergey</h1>
+            <div class="div-border"></div>
             <h2>Front-End Developer (Beginner)</h2>
           </div>
         </div>
@@ -57,13 +58,14 @@
           </section>
           <section id="contacts">
             <h2 class="section_header">Contacts</h2>
-            <ul>
-              <li>Address: Samara, Russian Federation</li>
-              <li>Mobile phone: +7(929)705-28-50</li>
+            <ul class="contacts_list">
+              <li>Location: Samara, Russian Federation</li>
+              <li>Phone: +7(929)705-28-50</li>
               <li>E-mail: adonisiy@list.ru</li>
               <li>
+                Discord:
                 <a href="https://discordapp.com/users/1175865175199469660/"
-                  >Discord</a
+                  >@Adonisiy</a
                 >
               </li>
             </ul>
@@ -76,7 +78,8 @@
               <li>Delphi</li>
               <li>JavaScript</li>
               <li>TypeScript</li>
-              <li>Node.js, NestJs</li>
+              <li>Node.js</li>
+              <li>NestJs</li>
               <li>Git, GitHub</li>
             </ul>
           </section>
@@ -90,32 +93,6 @@
 }</code>
             </pre>
           </section>
-          <!-- <section>
-            <h2>Example code</h2>
-            <pre><code>function dayPlan (hours, tasks, duration){ 
-    if (!tasks) return []; 
-    let schedule = []; 
-    let rest = Math.round((60*hours-tasks*duration)/(tasks-1)); 
-    if (rest&lt;0) return &quot;You&apos;re not sleeping tonight!&quot;; 
-    for (let i=1; i&lt;tasks; i++){
-      schedule.push(duration); 
-      schedule.push(rest); 
-    } 
-    schedule.push(duration);
-    return schedule; 
-  }</code></pre>
-          </section> -->
-          <!-- <section id="code">
-            <h2 class="section-header code">Example code</h2>
-            <pre
-              class="pre-code"
-            ><code><span class="code">const findAll = (array, n) => {</span>
-<span class="code">let res = [];</span>
-<span class="code">for (let i=0; i &lt; array.length; i++)</span>
-  <span class="code">if (array[i]==n) res.push(i);</span>              
-<span class="code">return res;</span>                  
-<span class="code">}</span></code></pre>
-          </section> -->
         </div>
         <div class="column-2">
           <section id="experience">
@@ -161,11 +138,16 @@
         </div>
       </main>
       <footer>
-        <a href="https://github.com/Adonisiy"></a>
-        <span>2024</span>
-        <a
-          href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0"
-        ></a>
+        <div class="footer_container">
+          <a href="https://github.com/Adonisiy" class="link-github"
+            ><img src="./assets/icon/github.png" alt="icon of GitHub" />My
+            GitHub</a
+          >
+          <span>2024</span>
+          <a href="https://rs.school/courses/javascript-ru">
+            <img src="./assets/icon/rsschool.png" alt="icon of RSSchool" />
+          </a>
+        </div>
       </footer>
     </div>
   </body>
